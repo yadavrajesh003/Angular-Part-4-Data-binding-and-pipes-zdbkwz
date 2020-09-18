@@ -10,6 +10,8 @@ export class ProductListComponent {
   imageMargin: number = 2;
   showImage: boolean = false;
   listFilter: string = 'cart';
+  imgBaseUrl:string ="https://cdn.jsdelivr.net/gh/yadavrajesh003/Angular-Part-4-Data-binding-and-pipes-zdbkwz@master/src/";
+  
   products: any[] = [
     {
       "productId": 2,
@@ -19,7 +21,7 @@ export class ProductListComponent {
       "description": "15 gallon capacity rolling garden cart",
       "price": 32.99,
       "starRating": 4.2,
-      "imageUrl": "assets/images/garden_cart.png"
+      "imageUrl": this.imgBaseUrl+ "assets/images/garden_cart.png"
     },
     {
       "productId": 5,
@@ -29,7 +31,7 @@ export class ProductListComponent {
       "description": "Curved claw steel hammer",
       "price": 8.9,
       "starRating": 4.8,
-      "imageUrl": "assets/images/hammer.png"
+      "imageUrl": this.imgBaseUrl+ "assets/images/hammer.png"
     }
   ];
 
